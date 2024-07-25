@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // output: "export",
-    // images:{
-    //     remotePatterns:{
-    //         loader: "custom",
-    //         loaderFiles: "./loader.js",
-    //         protocol: "https",
-    //     }
-    // }
+    output: "export",
+    images: {
+        loader: "custom",
+        loaderFiles: "./loader.js",
+remotePatterns:[{
+    protocol:"https"
+}]
+    }
 };
 
 export default nextConfig;
