@@ -4,8 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-
-import { gitHub, linkedIn } from "@/app/data/page";
 import Image from "next/image";
 
 const links = [
@@ -14,6 +12,10 @@ const links = [
   { url: "/portfolio", title: "Portfolio" },
   { url: "/contact", title: "Contact" }
 ];
+
+const gitHub = "https://github.com/ArifBashaK08"
+const linkedIn = "https://www.linkedin.com/in/arif-basha-kolimi-331428217/"
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

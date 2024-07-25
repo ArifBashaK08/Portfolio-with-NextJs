@@ -1,11 +1,37 @@
 "use client"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
-import { projects } from "../data/page"
 import Link from "next/link"
 import Image from "next/image"
 
 const Portfolio = () => {
+
+  const projects = [
+    {
+        id: 1,
+        title: "Foodie's Hub",
+        image: "/FoodieLogo.png",
+        desc: "A Food app UI prototype which build with React JS, Redux Toolkit and Tailwind CSS",
+        link: "https://food-app-prototype-arif-basha-ks-projects.vercel.app/",
+        color: "from-red-300 to-blue-300"
+    },
+    {
+        id: 2,
+        title: "Blogger.com",
+        image: "/BloggingApp.png",
+        desc: "A full-stack Blogging app which build with Server-side Rendering using eJs, Bootstrap CSS, Node JS, Express and MongoDB",
+        link: "https://blogging-app-uyxc.onrender.com",
+        color: "from-blue-300 to-violet-300"
+    },
+    {
+        id: 3,
+        title: "Vibes.com",
+        image: "/SocialMedia.png",
+        desc: "A Social-media app which build with React JS, Node JS, Express, MongoDB and MaterialUI",
+        link: "https://vibes-com.onrender.com",
+        color: "from-violet-300 to-purple-300"
+    }
+]
 
   const ref = useRef()
 

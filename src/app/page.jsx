@@ -1,13 +1,16 @@
 "use client"
 
 import Image from "next/image";
-import { name, objective } from "./data/page";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 import Link from "next/link";
 
 
 const Homepage = () => {
+
+  const name = "Arif Basha K."
+  const objective = "Passionate Web Developer skilled in React, Node, Express, and MongoDB, dedicated to creating immersive web applications and thriving in dynamic team environments."
+
   return <motion.div className="h-full"
     initial={{ y: "-200vh" }}
     animate={{ y: 0 }}
