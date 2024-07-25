@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 import { gitHub, linkedIn } from "@/app/data/page";
+import Image from "next/image";
 
 const links = [
   { url: "/", title: "Home" },
@@ -68,13 +69,13 @@ const Navbar = () => {
       {/* SOCIAL MEDIA LINKS */}
       <div className="hidden md:flex justify-end gap-10 w-1/3 px-4 py-2">
         <Link href={gitHub}>
-          <img src="/github.png" alt="GitHub" width={25} />
+          <Image src="/github.png" alt="GitHub" width={25} height={25}/>
         </Link>
         <Link href={linkedIn}>
-          <img src="/linkedin.png" alt="LinkedIn" width={25} />
+          <Image src="/linkedin.png" alt="LinkedIn" width={25} height={25}/>
         </Link>
         <Link href={"/"}>
-          <img src="/instagram.png" alt="Instagram" width={25} />
+          <Image src="/instagram.png" alt="Instagram" width={25} height={25}/>
         </Link>
       </div>
 

@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 import { projects } from "../data/page"
 import Link from "next/link"
+import Image from "next/image"
 
 const Portfolio = () => {
 
@@ -26,9 +27,9 @@ const Portfolio = () => {
             projects.map(({ id, title, image, desc, link, color }) => (
               <div className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${color}`} key={id}>
                 <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl text-center">{title}</h1>
+                  <h1 className="text-lg font-bold md:text-4xl lg:text-6xl xl:text-8xl text-center">{title}</h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] flex justify-center">
-                    <img src={image} alt={title} className="h-full object-cover" />
+                    <Image src={image} alt={title} className="object-cover" width={400} height={100}/>
                   </div>
                   <p className="w-80 md:w-96  lg:w-[500px] xl:w-[600px] lg:text-lg text-justify">{desc}</p>
                   <Link href={link}
