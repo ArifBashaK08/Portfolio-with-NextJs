@@ -5,7 +5,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-import { gitHub, linkedIn } from "@/app/data";
+import { gitHub, linkedIn } from "@/app/data/page";
 
 const links = [
   { url: "/", title: "Home" },
