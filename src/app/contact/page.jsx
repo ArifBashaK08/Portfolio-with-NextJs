@@ -61,7 +61,7 @@ const Contact = () => {
       </div>
       {/* FORM CONTAINER */}
       <div className="h-2/3 lg:h-full lg:w-1/2  rounded-xl flex flex-col lg:justify-center lg:items-center p-4 sm:p-8 md:p-12 lg:p-16 bg-red-50 lg:bg-transparent">
-        <form className="h-full w-full md:bg-red-50 rounded-xl flex flex-col justify-center gap-4 md:gap-6 lg:gap-12 p-4 sm:p-8 md:p-12 md:text-lg lg:text-xl" ref={form}
+        <form className="h-full w-full md:bg-red-50 rounded-xl flex flex-col justify-center gap-4 md:gap-6 lg:gap-10 p-4 sm:p-8 md:p-12 md:text-lg lg:text-xl" ref={form}
           onSubmit={sendEmail}>
           <strong className="text-xl font-semibold text-center uppercase underline">Send mail</strong>
           <span>Dear Arif Basha K.,</span>
