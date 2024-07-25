@@ -35,7 +35,7 @@ const About = () => {
           <p className="">{objective}
           </p>
           {/* SIGNATURE */}
-            <Image src="/Sign.png" alt="Signature" className="w-1/4 self-end" width={500} height={250}/>
+            <Image src="/Sign.png" alt="Signature" className="self-end" width={150} height={50}/>
           {/* SCROLL SVG */}
           <motion.svg
             initial={{ opacity: 0.2, y: 0 }}
