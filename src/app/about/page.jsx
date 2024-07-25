@@ -4,6 +4,7 @@ import { skills, experience } from "../data/page"
 import MyBrain from "@/components/MyBrain"
 import { useRef } from "react"
 import { objective } from "../data/page"
+import Image from "next/image"
 
 const About = () => {
 
@@ -34,9 +35,7 @@ const About = () => {
           <p className="">{objective}
           </p>
           {/* SIGNATURE */}
-          <div className="w-1/4 self-end">
-            <img src="/Sign.png" alt="Signature" className="w-full" />
-          </div>
+            <Image src="/Sign.png" alt="Signature" className="w-1/4 self-end" width={500} height={250}/>
           {/* SCROLL SVG */}
           <motion.svg
             initial={{ opacity: 0.2, y: 0 }}
