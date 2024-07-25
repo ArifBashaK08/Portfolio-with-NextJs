@@ -22,7 +22,7 @@ const Homepage = () => {
       <div className="h-1/2 lg:h-3/4 lg:w-1/2 flex flex-col justify-center items-center gap-8">
         {/* TITLE */}
         <h1 className="w-full text-3xl md:text-5xl font-bold lg:text-start">
-          Hello there! I&apos;m &nbsp;<strong className="text-4xl md:text-6xl">{name}</strong>
+          Hello there! I am &nbsp;<strong className="text-4xl md:text-6xl">{name}</strong>
         </h1>
         {/* DESCRIPTION */}
         <p className="md:text-xl">{objective}</p>
