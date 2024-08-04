@@ -18,7 +18,7 @@ const Homepage = () => {
     <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:48 items-center">
       {/* IMAGE CONTAINER */}
       <div className="w-full h-1/2 lg:h-3/4 lg:w-1/2 relative lg:flex items-center">
-        <Image src={"/hero.png"} alt="" fill className="object-contain w-full" />
+        <Image src={"/hero.png"} alt="" fill className="object-contain h-full drop-shadow-[10px_10px_5px_rgba(75,85,99,0.5)]" />
       </div>
       {/* TEXT CONTAINER */}
       <div className="h-1/2 lg:h-3/4 lg:w-1/2 flex flex-col justify-center items-center gap-8">
@@ -33,7 +33,7 @@ const Homepage = () => {
             commitment to excellence.</p>
         <div className="flex justify-evenly w-full">
           <Link href={"/portfolio"} className="font-semibold text-sm bg-black text-white px-5 py-3 rounded-md">View My Works</Link>
-          <a href={"/ArifBashaK.pdf"} download className="font-semibold text-sm border border-black px-5 py-3 rounded-md hover:bg-black hover:text-white flex items-center gap-2"><FaDownload size={20} /> My Resume</a>
+          <a href={"/ArifBashaK-Resume.pdf"} download className="font-semibold text-sm border border-black px-5 py-3 rounded-md hover:bg-black hover:text-white flex items-center gap-2"><FaDownload size={20} /> My Resume</a>
         </div>
       </div>
     </div>
